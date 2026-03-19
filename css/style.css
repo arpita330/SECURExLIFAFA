@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.create-lifafa-container, .claim-lifafa-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-field .material-icons {
+    margin-right: 10px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4500b5;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+
