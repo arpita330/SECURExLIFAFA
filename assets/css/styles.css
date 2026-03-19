@@ -1,0 +1,2139 @@
+
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights.  */
+
+@import url('../fonts/fonts.css');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #4242427b; /* Set a background color that contrasts well on mobile */
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+input{
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+.contenter {
+    width: 100%;
+    max-width: 26rem; 
+    height: 100%;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
+    .contenter {
+        max-width: 30rem; 
+    }
+}
+
+/* Reset styles for certain HTML elements */
+html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+.float-right-10pxside {
+    float: right;
+    margin-right: 10%;
+    margin-top: 8%;
+}
+
+
+.float-left-10pxside {
+    float: left;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+
+.text-normal-bold {
+    font-weight: normal;
+}
+
+.text-hard-bold {
+    font-weight: bold;
+}
+
+.top_bar {
+    padding-bottom: 20px; /* Add padding to the bottom of .top_bar */
+    overflow: hidden; /* Clear the floats inside .top_bar */
+}
+.auto-slider-banner {
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    margin: auto; /* Center the slider horizontally */
+    touch-action: pan-y; /* Enable vertical scrolling when touching */
+    top: 15px;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease; /* Add slide animation transition to the container */
+}
+
+.slider-image {
+    width: 100%;
+    flex: 0 0 100%; /* Ensure each image takes up the full width of the container */
+    border-radius: 15px; /* Adjust the border-radius as needed for rounded corners */
+    overflow: hidden; /* Ensure the rounded corners are applied to the image */
+}
+
+.slider-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #555;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    /* width: 90%; */
+    max-width: 80%;
+    margin: auto; 
+    padding-top: 35px;
+}
+
+.icon-card{
+    /* position: relative;
+    bottom: -22%;
+    margin-bottom: 55%; */
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon svg {
+    width: 48px;
+    height: 48px;
+}
+
+.icon .title{
+    font-weight: normal;
+    margin-top: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+.bottom-nav {
+    position: fixed;
+    max-width: 413px;
+    /* position: absolute; */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    /* max-width: 30rem; */
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    gap: 10%;
+    height: auto;
+    padding: 12px;
+}
+
+/* 
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 30rem; 
+    background-color: #fff; 
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px -2px 9px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    gap: 10%;
+    height: 8%;
+} */
+
+
+.bottom-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10px; */
+    text-decoration: none;
+    justify-content: center;
+    /* color: #333;  */
+    /* margin-top: 4%; */
+}
+
+.bottom-nav svg {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-label {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #B8B8B8;
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    background-color: #EDEEF0; 
+    margin-top: 7%;
+}
+
+.line2 {
+    width: 80%;
+    height: 2px;
+    background-color: #EDEEF0;
+    margin: auto;
+}
+
+.red-line {
+    width: 80%;
+    height: 2px;
+    background-color: red;
+    margin: auto;
+}
+
+.transaction-card {
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+    background-color: #FFFFFF;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; */
+    margin-top: 20%;
+}
+
+.transaction{
+    margin: 15px;
+}
+
+.text-title{
+       /* margin: 7%; */
+       margin-left: 28px;
+       margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-success {
+    color: #00CF39;
+}
+
+.text-danger {
+    color: #F83B00;
+}
+
+.text-small {
+    font-size: 13px;
+    color: #626A77;
+    margin-top: 8px;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.text-with-svg{
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    gap: 4px;
+}
+
+.back-button{
+    float: left;
+    padding: 32px 26px 6px;
+    width: 100%;
+}
+
+.back-button-right{
+    float: right;
+    /* padding: 32px 26px 6px; */
+    /* width: 100%; */
+    margin-top: 33px;
+    margin-right: 26px;
+}
+
+.login-or-register-text{
+    margin: 30px;
+    padding-top: 12%;
+}
+
+.font-size-larger{
+    font-size: larger;
+}
+
+.overflow-hiden{
+    overflow-x: hidden;
+    overflow: hidden;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 8%;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+}
+
+.country-code {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    padding: 0 10px; /* Adjust padding as needed */
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-weight: bold;
+    border-left: 1px solid #E1E2E5;
+    border-top: 1px solid #E1E2E5;
+    border-bottom: 1px solid #E1E2E5;
+    height: 50px;
+}
+
+.phone-input {
+    /* margin-left: 10px; */
+    width: 100%;
+}
+
+.phone-input input {
+    width: 100%;
+    padding: 10px;
+    border-right: 1px solid #E1E2E5;
+    border-top: 1px solid #E1E2E5;
+    border-bottom: 1px solid #E1E2E5;
+    border-left: 1px solid #ffffff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+.phone-input input:focus {
+    border:1px solid #0063F8 !important;
+    outline: none !important;
+}
+
+
+.otp-input input {
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    border-radius: 8px; /* Set the border-radius to create rounded corners */
+    border: 1px solid #E1E2E5; /* Add border properties */
+    margin: 0 5px; /* Add margin for spacing between inputs */
+    text-align: center;
+}
+
+/* Add focus styles if needed */
+.otp-input input:focus {
+    outline: none;
+    border-color: #0063F8; /* Change the border color on focus */
+}
+
+.height-10 {
+    height: 10px;
+}
+
+.height-20 {
+    height: 20px;
+}
+
+.height-50 {
+    height: 50px;
+}
+
+.top-80 {
+    position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  /* background-color: #ffffff; */
+  padding: 20px;
+  width: 100%;
+  max-width: 430px;
+  }
+  
+  
+.margin-bottom-65{
+    margin-bottom: -65%;
+}
+
+.top-80 p {
+    FONT-WEIGHT: 600;
+}
+
+.color-blue{
+    color: #0063F8;
+}
+
+.button {
+    background-color: #0063F8;
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 10px; /* Adjust border-radius as needed */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.button-width-90-center {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+.button:hover {
+    /* background-color: #004580;  */
+}
+
+.width-100{
+    width: 100%
+}
+
+.top-80 .text-small{
+    /* margin-top: 10px; */
+}
+
+.button-some-gape{
+    /* margin-top: 80%; */
+}
+
+.bottom-fixed {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+    max-width: 352px;
+    width: 100%;
+  }
+
+.show-mobile-div{
+    display: flex;
+    gap: 10px;
+    margin-left: 8%;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.loading {
+    background-color: #0063F8;
+    height: 100%;
+    width: 100%;
+}
+
+.center-contents{
+       /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.get-start-svg-contenter {
+    display: flex;
+    justify-content: center;
+    margin-top: 50%;
+    transition: transform 0.5s ease-in-out;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.get-start-svg {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.get-start-svg.active {
+    display: block;
+}
+
+.svg-contenter {
+    width: 55%;
+    display: flex;
+    /* margin: -22% 22%; */
+    margin-top: -15%;
+    margin-left: 21%;
+    height: 90%;
+}
+
+.get-start-svg p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.get-start-svg span {
+    text-align: center;
+    font-size: 15px;
+    display: block;
+    width: 80%;
+    color: #767D88;
+    margin: auto;
+}
+
+.buttom-button {
+        /* margin-top: 50%; */
+        padding: 8%;
+        bottom: 5%;
+        position: absolute;
+        width: 85%;
+}
+
+.slider-dots-center {
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-dots-center > div {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px; /* Adjust as needed for spacing */
+    background-color: #AACBFD; /* Inactive dot color */
+    transition: background-color 0.3s ease;
+}
+
+.slider-dots-center .dot1.active,
+.slider-dots-center .dot2.active,
+.slider-dots-center .dot3.active {
+    background-color: #0063F8; /* Active dot color */
+}
+
+.bg-blue{
+    background-color: #0063F8;
+}
+
+.top-bar-blue{
+
+    width: 100%;
+    background-color: #0063F8;
+    padding: 5%;
+
+}
+
+.top-bar-blue-big{
+
+    width: 100%;
+    background-color: #0063F8;
+    padding: 5%;
+    height: 84px;
+
+}
+
+.only-flex{
+    display: flex;
+}
+
+
+.only-flex p{
+    color: #ffffff;
+}
+
+/* .wallet-cart {
+    width: 360px;
+    height: 200px;
+    background: url('../img/wallet-card.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 13px;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.wallet-cart {
+    width: 90%;
+    max-width: 360px;
+    height: 200px;
+    background: url('../img/wallet-card.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 13px;
+    margin: 10px auto;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.white-text{
+    color: white;
+}
+
+.color-blue2{
+    color: #5665F1;
+}
+
+.blue-line {
+    color: #0063F8;
+    border-bottom: 8px solid #0063F8;
+}
+
+.yellow-line {
+    color: #F9D600;
+    border-bottom: 8px solid #F9D600;
+}
+
+.blue-and-yelow-line{
+    position: relative;
+    /* top: 29%; */
+}
+
+.recents-title{
+    position: relative;
+    /* top: 30%; */
+    display: flex;
+    margin-left: 25px;
+    padding-bottom: 13px;
+    margin-top: 21px;
+}
+
+
+.text-filter{
+    float: right;
+    display: flex;
+    margin-left: 62%;
+}
+
+.recents-transaction{
+    /* top: 30%; */
+    position: relative;
+    /* overflow-x: auto; */
+    /* max-height: 50%; */
+}
+
+.date-container{
+    background-color: #F5F5F6;
+    width: 100%;
+    height: 38px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.date-container p{
+    color: #626A77;
+    margin-left: 23px;
+    padding-top: 11px;
+    word-spacing: 2px;
+}
+
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+
+.transaction-row {
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    border-bottom: 1px solid #eee;
+}
+
+.rounded-logo {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #d7d7d7; /* Fix syntax error here */
+}
+
+.text-1, .text-2 {
+    margin-right: 10px;
+}
+
+.text-1 p, .text-2 p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.text-1 p:first-child {
+    font-weight: bold;
+    font-size: 16px;
+    /* white-space: nowrap; */
+    margin-bottom: 3px;
+}
+
+.text-1 p:last-child {
+    color: #9FA4AB;
+    font-size: 12px;
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    white-space: nowrap;
+
+}
+
+.text-1 p:last-child svg{
+    height: 18px;
+}
+
+.text-2 p:first-child {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.text-2 p:last-child {
+    color: #9FA4AB;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.text-2 {
+    margin-left: auto;
+    text-align: right; /* Align text to the right */
+}
+
+.transaction-cart {
+    background-color: #fff;
+    width: 80%;
+    border-radius: 5px;
+    height: auto;
+    position: relative;
+    top: -41px;
+    margin: auto;
+    padding: 22px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.transaction-cart .transaction-status{
+    display: flex;
+    gap: 11px;
+}
+
+
+.transaction-cart .transaction-status p{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.receiver-details{
+    margin-top: 27px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 80%;
+    color: #414B5A;
+}
+
+.transaction-comment{
+    font-weight: bold;
+    width: 80%;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.receiver-logo{
+    float: right;
+    position: relative;
+    top: -57px;
+}
+
+.order-id-text{
+    font-size: 12px;
+    color: #9FA4AB;
+    margin-bottom: 30px;
+}
+
+.dashed-line {
+    border-top: 2px dashed #767D88; /* Adjust color as needed */
+    width: 100%; /* or specify a specific width */
+    margin: 10px 0; /* Adjust margin as needed */ 
+    color: #9FA4AB;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.float-left,
+.float-right {
+    flex: 1;
+    text-align: center;
+}
+
+.float-left {
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.float-right {
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+.date p:first-child{
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: auto;
+    text-align: left
+}
+
+.date p:last-child{
+    color: #9FA4AB;
+    font-size: 12px;
+    padding-top: 7px;
+    margin-left: auto;
+    text-align: left;
+    word-spacing: 2px;
+}
+
+
+.time p:first-child{
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: auto;
+    text-align: right
+}
+
+.time p:last-child{
+    color: #9FA4AB;
+    font-size: 12px;
+    padding-top: 7px;
+    margin-left: auto;
+    text-align: right;
+}
+
+
+.container-table .row{
+    display: flex;
+    padding-top: 10px;
+}
+
+
+.container-table .row p:first-child{
+       /* margin-left: auto; */
+       text-align: left;
+       font-weight: bold;
+}
+
+.container-table .row p:last-child{
+    color: #9FA4AB;
+    margin-left: auto;
+    text-align: right;
+    
+}
+
+.button-bordered-only {
+    border: 2px solid #0063F8; /* Border color */
+    background-color: transparent;
+    color: #0063F8; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button-bordered-only:hover {
+    background-color: #0063F8;
+    color: #fff;
+    border-color: #fff;
+}
+
+.button-center{
+   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.bottom-button-fixed{
+    padding: 29px;
+    position: fixed;
+    width: 85%;
+    bottom: 0%;
+}
+
+.scroll{
+    overflow: auto;
+    overflow-x: auto;
+    max-height: 90%;
+    height: 225mm;
+}
+
+.tab {
+    display: flex;
+    background-color: #EDEEF0;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    margin-top: 21px;
+    height: 5%;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.tab div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab .active {
+    background-color: #FFFFFF;
+    /* font-weight: bold; */
+    /* height: 19px; */
+    border-radius: 4px;
+    /* margin-left: 7px; */
+    /* margin-right: 7px; */
+}
+
+.tab .active:hover {
+    background-color: #FFFFFF;
+}
+
+.tab .active.smaller {
+    font-size: 0.8em;
+}
+
+.inbox {
+    background-color: #ffffff;
+    overflow: auto;
+    max-height: 75%;
+}
+
+.display-none {
+    display: none;
+}
+
+.inbox{
+    background-color: #ffffff;
+
+}
+
+.inbox .row-notifications:first-child{
+    /* background-color: #F5F5F6; */
+}
+
+.row-notifications{
+    padding: 20px;
+    border-bottom: 2px solid #EAEAEA;
+}
+
+.row-notifications:hover{
+    background-color: #F5F5F6;
+}
+
+.title-1{
+
+    /* font-weight: bold; */
+    margin-bottom: 12px;
+
+}
+.title-2{
+
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+.message{
+    color: #414B5A;
+    margin-bottom: 19px;
+}
+
+.row-notifications .date{
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.row-notifications .delete-button{
+    float: right;
+}
+
+
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+
+/* Style for the profile cart container */
+.profile-cart {
+    padding: 16px;
+    max-width: 100%;
+    margin: auto;
+    width: 90%;
+}
+
+/* Style for the rounded logo */
+.rounded-logo-2 {
+    width: 65px; /* Adjust the width of the logo */
+    height: 65px; /* Adjust the height of the logo */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the white box on the right side */
+.white-box {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 100px;
+    display: flex;
+    float: right;
+    margin-top: -64px;
+    gap: 10px;
+    border-radius: 4px;
+}
+
+/* Style for the QR Code section */
+.white-box svg {
+    width: 20px; /* Adjust the width of the SVG icon */
+    height: 20px; /* Adjust the height of the SVG icon */
+    fill: #0063F8; /* Adjust the fill color of the SVG icon */
+    margin-right: 5px; /* Adjust the margin as needed */
+}
+
+.text-container {
+    flex-grow: 1; 
+    padding-left: 20px;
+}
+
+.text-container p {
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.white-box p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+
+
+.list {
+    padding: 21px;
+}
+
+.level {
+    font-size: 12px;
+    color: #0C192C;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.row-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    background-color: white;
+    height: 19px;
+    /* width: 100%; */
+    border-radius: 5px;
+    padding: 18px;
+    /* margin: 22px; */
+}
+
+.row-list p {
+    margin: 0;
+    font-size: 16px;
+    color: #333333;
+}
+
+.float-right {
+    cursor: pointer;
+}
+
+/* Adjust the styling of the SVG icon as needed */
+.float-right svg {
+    width: 24px;
+    height: 24px;
+    fill: #0C192C;
+}
+
+/* Hover effect for the float-right element */
+.float-right:hover {
+    color: #0C192C;
+}
+
+.go-arrow{
+
+}
+
+.row-list p:first-child{
+    font-weight: bold;
+}
+
+.button-red-only-border{
+    color: #ff0000;
+    border: 1px solid #fe0000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.withdraw-contener{
+    padding: 28px;
+}
+
+.balance{
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.balance p:first-child{
+    font-weight: bold;
+}
+
+.balance p:last-child{
+    margin-left: 6px;
+}
+
+.dark-input {
+    width: 93%;
+    max-width: 100%;
+    border: 1px solid #E1E2E5;
+    background-color: #EDEEF0;
+    /* height: 37px; */
+    padding: 12px;
+    /* margin: 11px; */
+    transition: border-color 0.3s; /* Add a transition for a smooth effect */
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.dark-input:focus {
+    border:1px solid #0063F8 !important;
+    outline: none !important;
+}
+
+.enter-amount-contener{
+    background-color: #F5F5F6;
+    width: 91%;
+    height: auto;
+    padding: 17px;
+    margin-top: 39px;
+}
+
+.background-normal-white{
+   background-color: #F5F5F6;
+}
+
+.amount-input-group{
+    display: flex;
+    margin-top: 18px;
+    align-items: center;
+}
+
+.amount-input{
+    width: 121%;
+    height: 49px;
+    border: 1px solid #F5F5F6;
+    background-color: #F5F5F6;
+    font-weight: bold;
+    font-size: 39px;
+}
+
+.amount-input:focus {
+    border: 1px solid #F5F5F6;
+    outline: none !important;
+}
+
+.amount-input-group p:first-child{
+    font-weight: bold;
+    font-size: 39px;
+}
+
+.bottom-fixed-button {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 430px;
+    /* padding: 31px; */
+    text-align: center;
+    z-index: 1000;
+  }
+  
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+
+.pin-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0 0 0 / 49%);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s, backdrop-filter 0.3s;
+    backdrop-filter: blur(1px);
+    /* animation: slideDown 0.5s ease-out; */
+}
+
+.pin-cart {
+    /* display: none; */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #ffff;
+    width: 73%;
+    height: 80%;
+    padding: 30px;
+    border-radius: 14px;
+    /* animation: slidedown 0.5s ease-out; */
+  }
+  
+
+@keyframes slideUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(100%);
+    }
+  }
+
+  @keyframes slidedown {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+.pin-top{
+    display: flex;
+    gap: 10%;
+}
+
+.pin-top p:first-child{
+
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.pin-top p:last-child{
+
+    float: right;
+    display: block;
+    position: relative;
+    left: 50%;
+
+}
+
+.pin-cart .text-center{
+    text-align: center;
+    margin-top: 43px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.passcode-contener{
+    margin-top: 50px;
+}
+
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+
+
+.keyboard-container {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 10px;
+    max-width: 300px; 
+    margin: 20px auto;
+    margin-top: 50px;
+}
+
+.dlex {
+    display: flex;
+    /* justify-content: space-between; */
+    /* gap: 42px; */
+    gap: 34px;
+    padding-bottom: 12px;
+    justify-content: center;
+
+}
+
+.rounded-bg-number,
+.backspace-button,
+.submit-button-rounded {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #e0e0e0; /* Adjust background color as needed */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+    position: relative;
+    animation: spin 1s linear infinite;
+    /* margin: -1px; */
+    /* margin-left: 38px; */
+    left: 37px;
+    top: 36px;
+}
+
+.backspace-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.backspace-button svg {
+    width: 100%;
+    height: 100%;
+}
+
+.submit-button-rounded {
+    background-size: cover;
+}
+
+
+.border-radius-50px{
+    border-radius: 50px;
+}
+
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+
+
+/*  edit profile  */
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rounded-big-logo {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .logo-background {
+    width: 131px;
+    height: 131px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  }
+
+.logo-background-small {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* left: 53%; */
+    /* top: 27%; */
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffff;
+    padding: 7px;
+    border-radius: 50%;
+    margin-left: 88px;
+    margin-top: 132px;
+}
+
+  .photo-container {
+    margin-top: 10px; /* Adjust as needed */
+  }
+  
+  .kyc-box {
+    align-items: center;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #aaaaaa;
+    padding: 7px;
+    border-radius: 15px;
+    gap: 4px;
+}
+
+.verified-icon{
+    background-image: url('../img/verified.png');
+    width: 22px;
+    height: 23px;
+    background-size: cover;
+    /* background-position: center; */
+    /* border-radius: 50%; */
+    /* margin-bottom: 10px; */
+    /* margin-top: 60px; */
+    /* box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1); */
+}
+
+.unverified-icon{
+    background-image: url('../img/unverified.png');
+    width: 22px;
+    height: 23px;
+    background-size: cover;
+
+}
+
+.kyc-text{
+font-size: 14px;
+font-weight: bold;
+}
+
+
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+
+/* Container for the label and input */
+.label-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Style for the label */
+.label-container label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #333; /* Default label color */
+    transition: 0.3s ease-out;
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+/* Style for the input */
+.label-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s ease-out;
+    z-index: 1; /* Ensure input is above label */
+}
+
+/* Move the label up when the input is focused */
+.label-container input:focus + label {
+    top: 0;
+    font-size: 12px;
+    color: #0063F8;
+    background-color: #fff;
+    
+}
+
+
+
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+/*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+
+.floating-label-content { 
+    position:relative; 
+    margin-bottom:20px; 
+  }
+
+  .floating-label {
+    color:#1e4c82; 
+    font-size:15px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:15px;
+    top: 19px;
+    padding:0 5px;
+    background:#fff;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+    
+  }
+
+  .floating-input {
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    height: 59px;
+    padding: 0 20px;
+    /* background: #fff; */
+    color: #000000;
+    border: 1px solid #E1E2E5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: bold;
+    &:focus{
+      outline:none;
+      border-color: #000000; 
+      ~ .floating-label{
+        top:-8px;
+        font-size:15px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  
+.floating-input:focus {
+    border:2px solid #0063F8 !important;
+    outline: none !important;
+}
+
+.floating-select:not([value=""]):valid ~ .floating-label {
+    top:-8px;
+    font-size:13px;
+  }
+
+  .floating-input:focus + .floating-label,
+  .floating-input:not(:placeholder-shown) + .floating-label {
+      top: -8px;
+      font-size: 15px;
+      font-weight: bold;
+  }
+  
+.input-cart{
+
+    margin-top: 10%;
+    padding: 30px;
+
+  }
+
+  .floating-right {
+    color: #0063F8;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    transition: 0.3s; /* Add transition for a smooth effect */
+}
+
+  /*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+  /*  This CSS design is the exclusive property of MyWalletly. Unauthorized copying, reproduction, or use for other projects is strictly prohibited. Any such actions are at your own risk and may result in legal action by MyWalletly. By accessing this design, you agree to respect our intellectual property rights. */
+
+  .loading-icon {
+    content: '';
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    animation: spin 1s linear infinite;
+}
+
+.pl__ring:nth-child(2) .pl__orbit { animation-delay: calc(var(--dur) * -0.125); }
+.pl__ring:nth-child(3) .pl__orbit { animation-delay: calc(var(--dur) * -0.25); }
+.pl__ring:nth-child(4) .pl__orbit { animation-delay: calc(var(--dur) * -0.375); }
+.pl__ring:nth-child(5) .pl__orbit:first-child { stroke: hsla(var(--hue),90%,50%,0.3); }
+.pl__ring:nth-child(6) .pl__orbit { animation-delay: calc(var(--dur) * -0.25); }
+.pl__ring:nth-child(7) .pl__electron:nth-child(2) { animation-delay: calc(var(--dur) * -0.25); }
+.pl__ring:nth-child(8) .pl__electron:nth-child(2) { animation-delay: calc(var(--dur) * -0.125); }
+.pl__ring:nth-child(8) .pl__electron:nth-child(3) { animation-delay: calc(var(--dur) * -0.25); }
+.pl__ring:nth-child(8) .pl__electron:nth-child(4) { animation-delay: calc(var(--dur) * -0.375); }
+
+/* Animations */
+@keyframes orbit {
+	from { stroke-dashoffset: 0; }
+	to { stroke-dashoffset: 580; }
+}
+@keyframes ring {
+	from { transform: rotate(0); }
+	to { transform: rotate(1turn); }
+}
+@keyframes particleTop {
+	from { transform: rotateY(0) rotateZ(-35deg) translateY(-100%) rotateZ(35deg) rotateY(0); }
+	to { transform: rotateY(-1turn) rotateZ(-35deg) translateY(-100%) rotateZ(35deg) rotateY(1turn); }
+}
+@keyframes particleMiddle {
+	from { transform: rotateY(0) rotateZ(90deg) translateY(-100%) rotateZ(-90deg) rotateY(0); }
+	to { transform: rotateY(-1turn) rotateZ(90deg) translateY(-100%) rotateZ(-90deg) rotateY(1turn); }
+}
+@keyframes particleBottom {
+	from { transform: rotateY(0) rotateZ(-145deg) translateY(-100%) rotateZ(145deg) rotateY(0); }
+	to { transform: rotateY(-1turn) rotateZ(-145deg) translateY(-100%) rotateZ(145deg) rotateY(1turn); }
+}
+
+.valid:focus {
+    border-color: #00CF39 !important;
+}
+
+.invalid:focus {
+    border-color: #F83B00 !important; 
+}
+
+.paying_to{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.plan_amountDiv{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.plan_amount2{
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.plan_price{
+    text-align: center;
+    font-size: 11px;
+}
+
+.rechargeForDiv{
+    background-color: #e5e5e5;
+    padding: 13px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+}
+
+.plan_dec{
+    font-size: 12px;
+}
+
+.plan_button_div{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+}
+
+.plan_button{
+    background-color: #0063F8;
+    color: white;
+    padding: 13px;
+    width: 70mm;
+    border-radius: 10px;
+}
+
+.plan_button:hover{
+    background-color: #1f75f6;
+}
+
+.notification_permissons{
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+    padding: 8%;
+    border-radius: 3%;
+    box-shadow: 0px 5px 25px #00000070;
+    width: 75%;
+    top: -35%;
+}
+
+.notification_title{
+    font-size: 22px;
+    font-weight: bold;
+    /* margin-bottom: 16px; */
+    text-align: center;
+}
+
+.notification_description{
+    color: #c1c1c1;
+    font-weight: bold;
+    width: 85%;
+    text-align: center;
+    margin: auto;
+}
+
+.notification_icon {
+    background-image: url('../img/image_processing20220421-572-oitwi1.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 180px;
+}
+
+.subscribe_button{
+
+    width: 50%;
+    background-color: #0063F8;
+    border-radius: 10px;
+    padding: 4%;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.later_button{
+    color: #0063F8;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search{
+    margin: 23px;
+    text-align: center;
+}
+
+.search input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid silver;
+}
+
+.search input:focus{
+    border: 1px solid silver;
+    outline: none;
+}
+
+.row-list .flexxx{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.row-list .flexxx p{
+    font-weight: bold;
+} 
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  height: 75px;
+  width: 100%;
+  box-shadow: 2px -2px 2px #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  z-index: 10;
+  background: white;
+}
+
+.bottom-nav a {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.bottom-nav a.active {
+  color: purple;
+}
+
+.bottom-nav a span {
+  display: block;
+  margin-top: 5px;
+}
+
+.bottom-nav a:first-child {
+  margin-left: 25px;
+}
+
+.bottom-nav a:last-child {
+  margin-right: 25px;
+}
+
+.funds-infos {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.funds-infos .funds-info {
+  width: 45%;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #87CEEB, #5F9EA0);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+.funds-infos .funds-info:last-child {
+  background: linear-gradient(to bottom, #66CDAA, #77DDAA);
+}
+
+.funds-infos .funds-info h3 {
+  margin: 0;
+}
+
+.funds-infos .funds-info h2 {
+  margin: 20px 0;
+}
+
+.funds-infos .funds-info p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+header {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background: linear-gradient(to bottom, #0058A0, #0074E4);
+  width: 100%;
+  justify-content: space-between;
+}
+
+header h4 {
+  margin-left: 10px;
+}
+
+.apis-container {
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 90%;
+  display: flex;
+  margin: 20px auto 20px;
+  flex-direction: column;
+  background-color: #7AC5DC;
+  color: white;
+  position: relative;
+}
+
+.apis-container p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.apis-container input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #87CEEB;
+}
+
+.apis-container.api-box {
+  background: #E6C200;
+  margin-bottom: 85px;
+}
+
+.apis-container.api-box input {
+  box-shadow: 5px 5px 5px #FFD700;
+}
+
+header .logout {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background: red;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  display: flex;
+  width: 90%;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  outline: none;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+button {
+  display: flex;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 15px auto;
+  outline: none;
+  border: none;
+  background: #00008B;
+  color: white;
+  width: 95%;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.reset_button {
+  display: flex;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 15px auto;
+  outline: none;
+  border: none;
+  background: #DC3545;
+  color: white;
+  width: 30%;
+  justify-content: center;
+  font-weight: 600;
+  position: absolute;
+  left: 40%;
+  top: -5px;
+  font-size: 0.9em;
+  padding: 5px;
+}
+
+form img {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  margin: 20px auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+input:focus {
+  border: 2px solid #007BFF;
+}
+
+.notice {
+  margin-bottom: 90px;
+  width: 95%;
+  margin-left: 2.5%;
+  list-style: none;
+}
+
+.notice h3 {
+  margin-bottom: 10px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 15px;
+
+}
+
+.sidebody {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 10px;
+  border-right: 1px solid #ccc;
+  z-index: 2;
+}
+
+.sidenav a {
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #9fbaea;
+  display: block;
+  transition: 0.3s;
+  font-weight: 600;
+  width: 250px;
+}
+
+.sidenav a {
+  color: #14aaad;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav a.active {
+  background: #bde9d1;
+  width: 90%;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #14aaad;
+}
+
+.sidenav div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.sidenav div img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+}
+
+.sidenav div h4 {
+  color: black;
+  margin-left: 7px;
+}
+
+.sidenav .footer {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  font-weight: 600;
+}
+
+.sidenav i.fa-angle-right {
+  position: absolute;
+  right: 15px;
+}
+
+input#payment-token {
+  background-color: #a5d8eb;
+}
+
+input#payment-api {
+  background-color: #f9de47;
+}
