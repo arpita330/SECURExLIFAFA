@@ -1,0 +1,194 @@
+ .input{
+        display: block;
+        width: 75%;
+        margin-bottom: 10px;
+         margin-top: 10px;
+        text-align: center;
+        color: black;
+        font-family: 'Montserrat';
+        padding: 0;
+        font-size: 15px;
+        font-weight: 800;
+        height: 40px;
+        border: 1px solid #047aed;
+        border-radius: 4px;
+        background-color: #E1F5FE;
+        outline: none;
+        padding: 0 5px 0 5px;
+        box-shadow: 0 5px 30px rgba(255, 255, 255, 0.1);
+    }
+    input:focus {
+  border: solid #047aed 2px;
+  border-radius:20px;
+  width:80%;
+   box-shadow: 1px 1px 8px grey ;
+  transition: width 200ms ease-in, box-shadow 200ms ease-in, border 200ms ease-in, border-radius 2000ms ease-in ;
+ 
+}
+
+    .submit{
+        height: 40px;
+        width: 50%;
+        border: 0;
+        border-radius: 4px;
+        margin-top: 10px;
+        padding: 0 25px 0 25px;
+        background: deeppink;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 100,.2);
+    }
+  
+.abox{
+background:blue;
+color:white;
+text-align:center;
+padding-top:2px;
+padding-bottom:2px;
+font-size:15px;
+padding-right:5px;
+padding-left:5px;
+font-weight:500;
+border-radius:5px;
+margin-right:3px;
+margin-left:3px;
+margin-bottom:10px;
+border:solid white 0.3px;
+}   
+
+.aabox{
+background:#047aed;
+color:white;
+text-align:center;
+padding-top:2px;
+padding-bottom:2px;
+font-size:15px;
+padding-right:5px;
+padding-left:5px;
+font-weight:500;
+border-radius:5px;
+margin-right:3px;
+margin-left:3px;
+margin-bottom:10px;
+border:solid white 0.3px;
+}   
+
+	.how{
+background:grey;
+color:white;
+text-align:center;
+padding-top:3px;
+padding-bottom:3px;
+font-size:15px;
+padding-right:9.5px;
+padding-left:9.5px;
+font-weight:500;
+border-radius:50%;
+border:solid white 0.3px;
+}  
+
+	  .box {
+	        background:transparent;
+	        width:50px;
+	        margin:3px;
+	        border-radius:5px;
+	        animation: mymove 1.5s infinite;
+transition: width 10ms ease-in;
+	    }
+	    
+@keyframes mymove {
+0%   {width:52px; margin:0.5px;}
+5%   {width:51.8px; margin:0.7px;}
+10%   {width:51.6px; margin:0.9px;}
+15%   {width:51.4px; margin:1.1px;}
+20%   {width:51.2px; margin:1.3px;}
+25%   {width:51px; margin:1.5px;}
+30%   {width:50.8px; margin:1.7px;}
+35%   {width:50.6px; margin:1.9px;}
+40%   {width:50.4px; margin:2.1px;}
+45%   {width:50.2px; margin:2.3px;}
+50%   {width:50px; margin:2.5px;}
+55%   {width:50.2px; margin:2.3px;}
+60%   {width:50.4px; margin:2.1px;}
+65%   {width:50.6px; margin:1.9px;}
+70%   {width:50.8px; margin:1.7px;}
+75%   {width:51px; margin:1.5px;}
+80%   {width:51.2px; margin:1.3px;}
+85%   {width:51.4px; margin:1.1px;}
+90%   {width:51.6px; margin:0.9px;}
+95%   {width:51.8px; margin:0.7px;}
+100%   {width:51.9px; margin:0.6px;}
+}
+
+.loaderr {
+  border: 7px solid #f3f3f3; /* Light grey */
+  border-top: 7px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spinn 2s linear infinite;
+}
+
+@keyframes spinn {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 9px solid green;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 72px;
+    left: 72px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 72px;
+    left: 72px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 72px;
+    left: 72px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 144px;
+    height: 144px;
+    opacity: 0;
+  }
+}
+
+#switcher td {
+padding:2px; padding-left:30px; padding-right:30px; background: grey; color:white; border-radius:5px;
+}
+
+#switcher th {padding:2px; padding-left:30px; padding-right:30px; background: green; color:white; border-radius:30px;}

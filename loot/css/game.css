@@ -1,0 +1,239 @@
+  .input{
+        display: block;
+        width: 75%;
+        margin-bottom: 10px;
+         margin-top: 10px;
+        text-align: center;
+        color: black;
+        font-family: 'Montserrat';
+        padding: 0;
+        font-size: 15px;
+        font-weight: 800;
+        height: 40px;
+        border: 1px solid #047aed;
+        border-radius: 4px;
+        background-color: #E1F5FE;
+        outline: none;
+        padding: 0 5px 0 5px;
+        box-shadow: 0 5px 30px rgba(255, 255, 255, 0.1);
+    }
+    input:focus {
+  border: solid #047aed 2px;
+  border-radius:20px;
+  width:80%;
+   box-shadow: 1px 1px 8px grey ;
+  transition: width 200ms ease-in, box-shadow 200ms ease-in, border 200ms ease-in, border-radius 2000ms ease-in ;
+ 
+}
+
+    .submit{
+        height: 40px;
+        width: 50%;
+        border: 0;
+        border-radius: 4px;
+        margin-top: 10px;
+        padding: 0 25px 0 25px;
+        background: deeppink;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 100,.2);
+    }
+    
+.rbox{
+background:red;
+color:white;
+text-align:center;
+padding-top:1px;
+padding-bottom:1px;
+padding-right:3.5px;
+padding-left:3.5px;
+font-size:15px;
+font-weight:500;
+border-radius:3px;
+border:solid white 0.3px;
+}   
+
+.gbox{
+background:green;
+color:white;
+text-align:center;
+padding-top:1px;
+padding-bottom:1px;
+font-size:15px;
+padding-right:2.5px;
+padding-left:2.5px;
+font-weight:500;
+border-radius:3px;
+border:solid white 0.3px;
+}   
+
+.how{
+background:grey;
+color:white;
+text-align:center;
+padding-top:3px;
+padding-bottom:3px;
+font-size:15px;
+padding-right:9.5px;
+padding-left:9.5px;
+font-weight:500;
+border-radius:50%;
+border:solid white 0.3px;
+}   
+
+.red{
+background:red;
+color:white;
+text-align:center;
+padding-top:10px;
+padding-bottom:10px;
+font-size:25px;
+width:150px;
+font-weight:500;
+border-radius:8px;
+border:solid white 0.3px;
+margin-top:20px;
+}   
+
+.green{
+background:green;
+color:white;
+text-align:center;
+padding-top:10px;
+padding-bottom:10px;
+font-size:25px;
+width:150px;
+font-weight:500;
+border-radius:8px;
+border:solid white 0.3px;
+margin-top:20px;
+}   
+
+.abox{
+background:blue;
+color:white;
+text-align:center;
+padding-top:2px;
+padding-bottom:2px;
+font-size:15px;
+padding-right:5px;
+padding-left:5px;
+font-weight:500;
+border-radius:5px;
+margin-right:3px;
+margin-left:3px;
+margin-bottom:10px;
+border:solid white 0.3px;
+}   
+
+.aabox{
+background:#047aed;
+color:white;
+text-align:center;
+padding-top:2px;
+padding-bottom:2px;
+font-size:15px;
+padding-right:5px;
+padding-left:5px;
+font-weight:500;
+border-radius:5px;
+margin-right:3px;
+margin-left:3px;
+margin-bottom:10px;
+border:solid white 0.3px;
+}   
+
+.loaderr {
+  border: 7px solid #f3f3f3; /* Light grey */
+  border-top: 7px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spinn 2s linear infinite;
+}
+
+@keyframes spinn {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: blue;
+  color: white;
+}
+
+ .alert {
+  padding: 20px;
+  background-color: red;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+.alertg {
+  padding: 20px;
+  background-color: green;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+ .reward{
+        height: 25px;
+        width: 90px;
+        border: 0;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        padding: 0 5px 0 5px;
+        background: deeppink;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 100,.2);
+    }
