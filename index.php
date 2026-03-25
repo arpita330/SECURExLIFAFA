@@ -13,7 +13,7 @@ $is_logged_in = isset($_SESSION['number']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Pavan Cash Loot, Advanced Lifafa Giveaway maker site, Payment Gateway, Play Games to earn Money, Paytm Dice Toss Form Giveaway, Lifafa with Refer & Earn, Best tools to manage your Lifafas" name="description">   
+    <meta content="SECURExLIFAFA, Advanced Lifafa Giveaway maker site, Payment Gateway, Play Games to earn Money, Paytm Dice Toss Form Giveaway, Lifafa with Refer & Earn, Best tools to manage your Lifafas" name="description">   
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
@@ -200,7 +200,7 @@ $is_logged_in = isset($_SESSION['number']);
     </div>
 
     <!-- Floating Telegram Icon -->
-    <a href="https://t.me/PavanCashLoot" target="_blank" rel="noopener noreferrer" class="floating-telegram" aria-label="Join us on Telegram">
+    <a href="https://t.me/SECURE_x_LIFAFA" target="_blank" rel="noopener noreferrer" class="floating-telegram" aria-label="Join us on Telegram">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="35px" height="35px">
             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.66-.35-1.02.22-1.61.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.06-.2-.07-.06-.18-.04-.26-.02-.11.02-1.84 1.17-5.2 3.44-.49.34-.94.5-1.34.49-.44-.01-1.28-.25-1.91-.45-.77-.25-1.38-.38-1.33-.81.03-.22.34-.45.94-.68 3.7-1.61 6.17-2.67 7.41-3.18 3.53-1.46 4.26-1.71 4.74-1.72.11 0 .34.02.5.15.13.11.17.26.19.4.01.04.02.09.02.14 0 .04.01.09.01.14z"/>
         </svg>
