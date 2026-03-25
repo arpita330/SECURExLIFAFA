@@ -150,7 +150,7 @@ $is_logged_in = isset($_SESSION['number']);
     <!-- Navigation Bar -->
     <nav class="bg-white shadow-lg">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.php" class="text-xl font-bold text-gray-800 hover:text-blue-600 transition">Pavan Cash Loot</a>
+            <a href="index.php" class="text-xl font-bold text-gray-800 hover:text-blue-600 transition">SECURExLIFAFA</a>
             <div class="space-x-4">
                 <?php if ($is_logged_in): ?>
                     <a href="dashboard.php" class="nav-link text-gray-700 hover:text-blue-600 font-bold">Dashboard</a>
@@ -165,7 +165,7 @@ $is_logged_in = isset($_SESSION['number']);
 
     <!-- Hero Section -->
     <div class="hero-section">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to Pavan Cash Loot</h1>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to SECURExLIFAFA</h1>
         <p class="text-lg md:text-xl mb-6">Your gateway to exciting offers and rewards.</p>
         <?php if (!$is_logged_in): ?>
             <a href="register.php" class="cta-button">Get Started</a>
@@ -209,7 +209,7 @@ $is_logged_in = isset($_SESSION['number']);
     <!-- Footer -->
     <footer>
         <div class="container mx-auto text-center">
-            <p class="font-bold">&copy; <?php echo date('Y'); ?> Pavan Cash Loot. All Rights Reserved.</p>
+            <p class="font-bold">&copy; <?php echo date('Y'); ?> SECURExLIFAFA. All Rights Reserved.</p>
         </div>
     </footer>
 
